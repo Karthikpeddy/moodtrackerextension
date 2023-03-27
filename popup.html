@@ -14,14 +14,11 @@
       <br />
       <p id="jokeElement">How are you feeling today?</p>
       <form action="connection.php" method="post">
-        <select id="mood-select">
-          <option value="happy">Happy</option>
-          <option value="sad">Sad</option>
-          <option value="angry">Angry</option>
-          <option value="anxious">Anxious</option>
-          <option value="neutral">Neutral</option>
-          <option value="frustrated">Frustrated</option>
-        </select>
+        <input type="radio" name="mood" value="happy" />Happy
+        <input type="radio" name="mood" value="sad" />Sad
+        <input type="radio" name="mood" value="angry" />Angry
+        <input type="radio" name="mood" value="anxious" />Anxious
+        <input type="radio" name="mood" value="frustrated" />Frustrted
         <button type="submit">Save</button>
       </form>
     </div>
