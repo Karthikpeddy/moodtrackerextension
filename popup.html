@@ -9,11 +9,11 @@
   <body>
     <div class="container">
       <h1>Mood Tracker</h1>
-      <p id="jokeElement">whats your's name:</p>
-      <input type="text" />
-      <br />
-      <p id="jokeElement">How are you feeling today?</p>
       <form action="connection.php" method="post">
+        <p id="jokeElement">whats your's name:</p>
+        <input type="text" name="name" />
+        <br />
+        <p id="jokeElement">How are you feeling today?</p>
         <input type="radio" name="mood" value="happy" />Happy
         <input type="radio" name="mood" value="sad" />Sad
         <input type="radio" name="mood" value="angry" />Angry

@@ -1,4 +1,5 @@
 <?php
+  $name=$_POST['name'];
   $mood=$_POST['mood'];
   $host = "localhost";
     $username = "root";
@@ -16,7 +17,7 @@
     else{
       echo "connected successfully";
     } 
-    $sql="INSERT INTO moods VALUES($mood)";
+    $sql="INSERT INTO moods VALUES($name,$mood)";
     $rs = mysqli_query($con, $sql);
     if($rs)
     { 
