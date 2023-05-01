@@ -14,12 +14,26 @@
         <input type="text" name="name" />
         <br />
         <p id="jokeElement">How are you feeling today?</p>
-        <input type="radio" name="mood" value="happy" />Happy
-        <input type="radio" name="mood" value="sad" />Sad
-        <input type="radio" name="mood" value="angry" />Angry
-        <input type="radio" name="mood" value="anxious" />Anxious
-        <input type="radio" name="mood" value="frustrated" />Frustrted
-        <button type="submit">Save</button>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenu2"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Dropdown
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">Action</button>
+            <button class="dropdown-item" type="button">Another action</button>
+            <button class="dropdown-item" type="button">
+              Something else here
+            </button>
+          </div>
+        </div>
+        <button class="glass-button" type="submit">Save</button>
       </form>
     </div>
   </body>
